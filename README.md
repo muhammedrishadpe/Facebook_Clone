@@ -17,3 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 "# facebook_ui_flutter" 
 "# Facebook_UI_Flutter" 
 "# Facebook_UI" 
+"# facebook_ui_flutterApp" 
