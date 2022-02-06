@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import './widgets/appBarButton.dart';
+
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,20 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          actions: [
+            AppBarButton(
+              buttonIcon: Icons.search,
+              buttonAction: () {
+                print(' search screen appears');
+              },
+            ),
+            AppBarButton(
+              buttonIcon: Icons.chat,
+              buttonAction: () {
+                print(' massenger screen appears');
+              },
+            ),
+          ],
         ),
       ),
     );
