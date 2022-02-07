@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './widgets/appBarButton.dart';
+import 'package:facebook_ui/sections/statusSection.dart';
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
@@ -35,6 +36,9 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
+        body: ListView(children: <Widget>[
+          StatusSection(),
+        ]),
       ),
     );
   }
