@@ -1,3 +1,4 @@
+import 'package:facebook_ui/sections/headerButtonSection.dart';
 import 'package:flutter/material.dart';
 
 import './widgets/appBarButton.dart';
@@ -38,6 +39,11 @@ class Home extends StatelessWidget {
         ),
         body: ListView(children: <Widget>[
           StatusSection(),
+          Divider(
+            thickness: 1,
+            color: Colors.grey[300],
+          ),
+          HeaderButtonSection()
         ]),
       ),
     );
