@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HeaderButtonSection extends StatelessWidget {
-  const HeaderButtonSection({Key key}) : super(key: key);
-
   Widget headerButton({
     @required String ButtonText,
     @required IconData ButtonIcon,
@@ -22,6 +20,11 @@ class HeaderButtonSection extends StatelessWidget {
   }
 
   @override
+  Widget verticalDivider = VerticalDivider(
+    thickness: 1,
+    color: Colors.grey,
+  );
+
   Widget build(BuildContext context) {
     return Container(
       height: 40,
@@ -36,10 +39,7 @@ class HeaderButtonSection extends StatelessWidget {
               print("Go Live");
             },
           ),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey,
-          ),
+          verticalDivider,
           headerButton(
             ButtonText: 'Photo',
             ButtonIcon: Icons.photo_library,
@@ -48,10 +48,7 @@ class HeaderButtonSection extends StatelessWidget {
               print("Go Album");
             },
           ),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey,
-          ),
+          verticalDivider,
           headerButton(
             ButtonText: 'Room',
             ButtonIcon: Icons.message,
