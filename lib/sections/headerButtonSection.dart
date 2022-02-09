@@ -26,7 +26,7 @@ class HeaderButtonSection extends StatelessWidget {
     return Container(
       height: 40,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           headerButton(
             ButtonText: 'live',
@@ -42,7 +42,7 @@ class HeaderButtonSection extends StatelessWidget {
           ),
           headerButton(
             ButtonText: 'Photo',
-            ButtonIcon: Icons.photo,
+            ButtonIcon: Icons.photo_library,
             buttonColor: Colors.green,
             buttonAction: () {
               print("Go Album");

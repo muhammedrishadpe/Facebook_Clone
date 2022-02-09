@@ -43,7 +43,11 @@ class Home extends StatelessWidget {
             thickness: 1,
             color: Colors.grey[300],
           ),
-          HeaderButtonSection()
+          HeaderButtonSection(),
+          Divider(
+            thickness: 10,
+            color: Colors.grey[300],
+          )
         ]),
       ),
     );
