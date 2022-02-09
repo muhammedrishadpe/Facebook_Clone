@@ -1,8 +1,9 @@
-import 'package:facebook_ui/sections/headerButtonSection.dart';
+import 'package:facebook_ui/sections/roomSection.dart';
 import 'package:flutter/material.dart';
 
 import './widgets/appBarButton.dart';
 import 'package:facebook_ui/sections/statusSection.dart';
+import 'package:facebook_ui/sections/headerButtonSection.dart';
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
@@ -47,7 +48,8 @@ class Home extends StatelessWidget {
           Divider(
             thickness: 10,
             color: Colors.grey[300],
-          )
+          ),
+          RoomSection(),
         ]),
       ),
     );

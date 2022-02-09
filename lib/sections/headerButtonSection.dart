@@ -51,8 +51,8 @@ class HeaderButtonSection extends StatelessWidget {
           verticalDivider,
           headerButton(
             ButtonText: 'Room',
-            ButtonIcon: Icons.message,
-            buttonColor: Colors.blue,
+            ButtonIcon: Icons.video_camera_front,
+            buttonColor: Colors.purple,
             buttonAction: () {
               print("Go Room");
             },
