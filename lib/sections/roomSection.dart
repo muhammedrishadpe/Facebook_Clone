@@ -32,28 +32,52 @@ class RoomSection extends StatelessWidget {
           Avatar(
             displayImage: liam,
           ),
+          Avatar(
+            displayImage: olivia,
+          ),
+          Avatar(
+            displayImage: emma,
+          ),
+          Avatar(
+            displayImage: noah,
+          ),
+          Avatar(
+            displayImage: elijah,
+          ),
+          Avatar(
+            displayImage: ava,
+          ),
+          Avatar(
+            displayImage: liam,
+          ),
         ],
       ),
     );
   }
 
   Widget createRoomButton() {
-    return OutlineButton.icon(
-      shape: StadiumBorder(),
-      onPressed: () {
-        print("Create a chat room");
-      },
-      icon: Icon(
-        Icons.video_camera_front_sharp,
-        color: Colors.purple,
+    return Container(
+      padding: EdgeInsets.only(
+        left: 5,
+        right: 5,
       ),
-      label: Text(
-        "Create \nRoom ",
-        style: TextStyle(
-          color: Colors.blue,
+      child: OutlineButton.icon(
+        shape: StadiumBorder(),
+        onPressed: () {
+          print("Create a chat room");
+        },
+        icon: Icon(
+          Icons.video_camera_front_sharp,
+          color: Colors.purple,
         ),
+        label: Text(
+          "Create \nRoom ",
+          style: TextStyle(
+            color: Colors.blue,
+          ),
+        ),
+        borderSide: BorderSide(color: Colors.blue[100], width: 2),
       ),
-      borderSide: BorderSide(color: Colors.blue[100], width: 2),
     );
   }
 }
