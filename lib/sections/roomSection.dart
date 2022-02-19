@@ -16,40 +16,19 @@ class RoomSection extends StatelessWidget {
           createRoomButton(),
           Avatar(
             displayImage: olivia,
+            displayStatus: true,
           ),
-          Avatar(
-            displayImage: emma,
-          ),
-          Avatar(
-            displayImage: noah,
-          ),
-          Avatar(
-            displayImage: elijah,
-          ),
-          Avatar(
-            displayImage: ava,
-          ),
-          Avatar(
-            displayImage: liam,
-          ),
-          Avatar(
-            displayImage: olivia,
-          ),
-          Avatar(
-            displayImage: emma,
-          ),
-          Avatar(
-            displayImage: noah,
-          ),
-          Avatar(
-            displayImage: elijah,
-          ),
-          Avatar(
-            displayImage: ava,
-          ),
-          Avatar(
-            displayImage: liam,
-          ),
+          Avatar(displayImage: emma, displayStatus: true),
+          Avatar(displayImage: noah, displayStatus: true),
+          Avatar(displayImage: elijah, displayStatus: true),
+          Avatar(displayImage: ava, displayStatus: true),
+          Avatar(displayImage: liam, displayStatus: true),
+          Avatar(displayImage: olivia, displayStatus: true),
+          Avatar(displayImage: emma, displayStatus: true),
+          Avatar(displayImage: noah, displayStatus: true),
+          Avatar(displayImage: elijah, displayStatus: true),
+          Avatar(displayImage: ava, displayStatus: true),
+          Avatar(displayImage: liam, displayStatus: true),
         ],
       ),
     );
