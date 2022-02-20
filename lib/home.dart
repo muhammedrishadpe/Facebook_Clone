@@ -1,7 +1,8 @@
 import 'package:facebook_ui/sections/roomSection.dart';
+import 'package:facebook_ui/sections/storySection.dart';
 import 'package:flutter/material.dart';
 
-import './widgets/appBarButton.dart';
+import 'widgets/circularButton.dart';
 import 'package:facebook_ui/sections/statusSection.dart';
 import 'package:facebook_ui/sections/headerButtonSection.dart';
 
@@ -33,13 +34,13 @@ class Home extends StatelessWidget {
             ),
           ),
           actions: [
-            AppBarButton(
+            CircularButton(
               buttonIcon: Icons.search,
               buttonAction: () {
                 print(' search screen appears');
               },
             ),
-            AppBarButton(
+            CircularButton(
               buttonIcon: Icons.chat,
               buttonAction: () {
                 print(' massenger screen appears');
@@ -54,6 +55,7 @@ class Home extends StatelessWidget {
           thicDivider,
           RoomSection(),
           thicDivider,
+          StorySection(),
         ]),
       ),
     );
