@@ -7,3 +7,12 @@ String elijah = "assets/avatars/p4.jpg";
 String ava = "assets/avatars/p5.jpg";
 String liam = "assets/avatars/p6.jpg";
 String rishad = "assets/avatars/p7.png";
+
+//Postes
+
+String blackAndWhite = "assets/posts/01.jpg";
+String fashon = "assets/posts/02.jpg";
+String hand = "assets/posts/03.jpg";
+String photography = "assets/posts/04.jpg";
+String model = "assets/posts/05.jpg";
+String travel = "assets/posts/06.jpg";

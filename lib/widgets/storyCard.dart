@@ -1,4 +1,5 @@
 import 'package:facebook_ui/assets.dart';
+import 'package:facebook_ui/widgets/avatar.dart';
 import 'package:facebook_ui/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
@@ -7,12 +8,13 @@ class StoryCard extends StatelessWidget {
   final String story;
   final String avatar;
   final bool createStoryStatus;
-
+  final bool displayBorder;
   StoryCard({
     @required this.labelText,
     @required this.story,
     @required this.avatar,
-    @required this.createStoryStatus = false,
+    this.createStoryStatus = false,
+    this.displayBorder,
   });
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class StoryCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(rishad),
+          image: AssetImage(story),
           fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.circular(15),
@@ -36,19 +38,25 @@ class StoryCard extends StatelessWidget {
           Positioned(
             left: 5,
             top: 5,
-            child: CircularButton(
-              buttonIcon: Icons.add,
-              buttonAction: () {
-                print("Create new stroy");
-              },
-              iconColor: Colors.blue,
-            ),
+            child: createStoryStatus
+                ? CircularButton(
+                    buttonIcon: Icons.add,
+                    buttonAction: () {
+                      print("Create new stroy");
+                    },
+                    iconColor: Colors.blue,
+                  )
+                : Avatar(
+                    displayImage: avatar,
+                    displayStatus: false,
+                    displayBorder: displayBorder,
+                  ),
           ),
           Positioned(
               bottom: 10,
               left: 10,
               child: Text(
-                "Add to Story",
+                labelText != null ? labelText : "N/A",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
