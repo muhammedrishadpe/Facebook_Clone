@@ -1,5 +1,7 @@
+import 'package:facebook_ui/assets.dart';
 import 'package:facebook_ui/sections/roomSection.dart';
 import 'package:facebook_ui/sections/storySection.dart';
+import 'package:facebook_ui/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/circularButton.dart';
@@ -56,6 +58,12 @@ class Home extends StatelessWidget {
           RoomSection(),
           thicDivider,
           StorySection(),
+          thicDivider,
+          PostCard(
+            name: "Olivia",
+            avatar: olivia,
+            publishedAt: "5h",
+          ),
         ]),
       ),
     );
