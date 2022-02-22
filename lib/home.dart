@@ -63,6 +63,8 @@ class Home extends StatelessWidget {
             name: "Olivia",
             avatar: olivia,
             publishedAt: "5h",
+            postTitle: "A better version of me.",
+            postImage: olivia,
           ),
         ]),
       ),
