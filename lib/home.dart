@@ -65,6 +65,7 @@ class Home extends StatelessWidget {
             publishedAt: "5h",
             postTitle: "A better version of me.",
             postImage: olivia,
+            showBluwTick: true,
           ),
         ]),
       ),

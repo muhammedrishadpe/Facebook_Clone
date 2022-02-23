@@ -9,6 +9,7 @@ class PostCard extends StatelessWidget {
   final String publishedAt;
   final String postTitle;
   final String postImage;
+  final bool showBluwTick;
 
   PostCard({
     @required this.avatar,
@@ -16,6 +17,7 @@ class PostCard extends StatelessWidget {
     @required this.publishedAt,
     @required this.postTitle,
     @required this.postImage,
+    this.showBluwTick = false,
   });
 
   @override
@@ -41,13 +43,17 @@ class PostCard extends StatelessWidget {
 
   Widget titleSection() {
     return Container(
+        padding: EdgeInsets.only(
+          top: 5,
+          bottom: 5,
+        ),
         child: Text(
-      postTitle == null ? "" : postTitle,
-      style: TextStyle(
-        color: Colors.black,
-        fontSize: 16,
-      ),
-    ));
+          postTitle == null ? "" : postTitle,
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 16,
+          ),
+        ));
   }
 
   Widget PostCardHeader() {
@@ -63,7 +69,7 @@ class PostCard extends StatelessWidget {
         SizedBox(
           width: 10,
         ),
-        BlueTick(),
+        showBluwTick ? BlueTick() : SizedBox(),
       ]),
       subtitle: Row(
         children: [
