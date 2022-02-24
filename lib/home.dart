@@ -1,6 +1,7 @@
 import 'package:facebook_ui/assets.dart';
 import 'package:facebook_ui/sections/roomSection.dart';
 import 'package:facebook_ui/sections/storySection.dart';
+import 'package:facebook_ui/widgets/headerButton.dart';
 import 'package:facebook_ui/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,32 @@ class Home extends StatelessWidget {
         body: ListView(children: <Widget>[
           StatusSection(),
           thinDivider,
-          HeaderButtonSection(),
+          HeaderButtonSection(
+            buttonOne: headerButton(
+              ButtonText: "Live",
+              ButtonIcon: Icons.video_call,
+              buttonColor: Colors.red,
+              buttonAction: () {
+                print("Go Live!!");
+              },
+            ),
+            buttonTwo: headerButton(
+              ButtonText: "Photo",
+              ButtonIcon: Icons.photo_library,
+              buttonColor: Colors.green,
+              buttonAction: () {
+                print("Take Photo!");
+              },
+            ),
+            buttonThree: headerButton(
+              ButtonText: "Room",
+              ButtonIcon: Icons.video_call,
+              buttonColor: Colors.purple,
+              buttonAction: () {
+                print("Create Room!");
+              },
+            ),
+          ),
           thicDivider,
           RoomSection(),
           thicDivider,
@@ -70,6 +96,7 @@ class Home extends StatelessWidget {
             shareCount: "1K",
             commentCount: "2K",
           ),
+          thicDivider,
         ]),
       ),
     );

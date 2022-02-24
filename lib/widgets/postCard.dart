@@ -1,6 +1,8 @@
 import 'package:facebook_ui/assets.dart';
+import 'package:facebook_ui/sections/headerButtonSection.dart';
 import 'package:facebook_ui/widgets/avatar.dart';
 import 'package:facebook_ui/widgets/blueTick.dart';
+import 'package:facebook_ui/widgets/headerButton.dart';
 import 'package:flutter/material.dart';
 
 class PostCard extends StatelessWidget {
@@ -35,6 +37,36 @@ class PostCard extends StatelessWidget {
           titleSection(),
           imageSection(),
           footerSection(),
+          Divider(
+            color: Colors.grey[300],
+            thickness: 1,
+          ),
+          HeaderButtonSection(
+            buttonOne: headerButton(
+              ButtonText: "Like",
+              ButtonIcon: Icons.thumb_up_alt_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("Like this post");
+              },
+            ),
+            buttonTwo: headerButton(
+              ButtonText: "Comment",
+              ButtonIcon: Icons.message_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("Comment on this post!");
+              },
+            ),
+            buttonThree: headerButton(
+              ButtonText: "Share",
+              ButtonIcon: Icons.share_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("Share this post");
+              },
+            ),
+          ),
         ],
       ),
     );
