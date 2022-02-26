@@ -1,6 +1,7 @@
 import 'package:facebook_ui/assets.dart';
 import 'package:facebook_ui/sections/roomSection.dart';
 import 'package:facebook_ui/sections/storySection.dart';
+import 'package:facebook_ui/sections/suggestionSection.dart';
 import 'package:facebook_ui/widgets/headerButton.dart';
 import 'package:facebook_ui/widgets/postCard.dart';
 import 'package:flutter/material.dart';
@@ -121,6 +122,8 @@ class Home extends StatelessWidget {
             commentCount: "2",
           ),
           thicDivider,
+          SuggestionSection(),
+          thicDivider,
           PostCard(
             name: "Elijah",
             avatar: elijah,
@@ -138,7 +141,7 @@ class Home extends StatelessWidget {
             avatar: ava,
             publishedAt: "2 days ago",
             postTitle: "'m an original and that's perfection in itself.",
-            postImage: model,
+            postImage: travel,
             showBluwTick: true,
             likeCount: "85K",
             shareCount: "25K",
@@ -150,7 +153,7 @@ class Home extends StatelessWidget {
             avatar: liam,
             publishedAt: "3h",
             postTitle: "",
-            postImage: travel,
+            postImage: model,
             showBluwTick: false,
             likeCount: "389",
             shareCount: "1",
