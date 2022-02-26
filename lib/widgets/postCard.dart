@@ -167,18 +167,22 @@ class PostCard extends StatelessWidget {
   }
 
   Widget titleSection() {
-    return Container(
-        padding: EdgeInsets.only(
-          top: 5,
-          bottom: 5,
-        ),
-        child: Text(
-          postTitle == null ? "" : postTitle,
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 16,
-          ),
-        ));
+    return postTitle != null && postTitle != ""
+        ? Container(
+            padding: EdgeInsets.only(
+              left: 10,
+              right: 10,
+              bottom: 5,
+            ),
+            child: Text(
+              postTitle == null ? "" : postTitle,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 16,
+              ),
+            ),
+          )
+        : SizedBox();
   }
 
   Widget PostCardHeader() {

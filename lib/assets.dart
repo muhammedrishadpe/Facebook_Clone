@@ -16,3 +16,6 @@ String hand = "assets/posts/03.jpg";
 String photography = "assets/posts/04.jpg";
 String model = "assets/posts/05.jpg";
 String travel = "assets/posts/06.jpg";
+
+//Post title
+String NoahTitle = "Life is the biggest party you'll ever be at.";
